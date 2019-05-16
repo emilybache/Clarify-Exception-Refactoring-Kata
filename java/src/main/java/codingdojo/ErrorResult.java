@@ -20,4 +20,16 @@ public class ErrorResult {
                 ", presentation='" + presentation + '\'' +
                 '}';
     }
+
+    public String getFormulaName() {
+        return formulaName;
+    }
+
+    public String getMessage() {
+        return message;
+    }
+
+    public String getPresentation() {
+        return presentation;
+    }
 }
