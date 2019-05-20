@@ -16,7 +16,7 @@ namespace codingdojo
 
             var actual = enricher.EnrichError(worksheet, e);
 
-            Assert.Equal("Fixme", actual.GetMessage());
+            Assert.Equal("Fixme", actual.Message);
         }
     }
 }

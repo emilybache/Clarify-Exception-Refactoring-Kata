@@ -14,14 +14,8 @@ namespace codingdojo
             _token = token;
         }
 
-        public List<string> GetCells()
-        {
-            return _cells;
-        }
+        public List<string> Cells => _cells;
 
-        public string GetToken()
-        {
-            return _token;
-        }
+        public string Token => _token;
     }
 }

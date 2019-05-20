@@ -46,7 +46,7 @@ namespace codingdojo
             if (e.GetType() == typeof(SpreadsheetException))
             {
                 var we = (SpreadsheetException) e;
-                return "No match found for token [" + we.GetToken() + "] related to formula '" + formulaName + "'.";
+                return "No match found for token [" + we.Token+ "] related to formula '" + formulaName + "'.";
             }
 
             return e.Message;
@@ -58,7 +58,7 @@ namespace codingdojo
             {
                 var we = (SpreadsheetException) e;
                 return "Circular Reference in spreadsheet related to formula '" + formulaName + "'. Cells: " +
-                       we.GetCells();
+                       we.Cells;
             }
 
             return e.Message;

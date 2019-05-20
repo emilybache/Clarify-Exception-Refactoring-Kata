@@ -23,19 +23,10 @@
                    '}';
         }
 
-        public string GetFormulaName()
-        {
-            return _formulaName;
-        }
+        public string FormulaName => _formulaName;
 
-        public string GetMessage()
-        {
-            return _message;
-        }
+        public string Message => _message;
 
-        public string GetPresentation()
-        {
-            return _presentation;
-        }
+        public string Presentation => _presentation;
     }
 }
