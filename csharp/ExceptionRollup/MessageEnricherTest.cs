@@ -1,7 +1,7 @@
 ﻿using System;
 using Xunit;
 
-namespace StarterProject
+namespace codingdojo
 {
     public class MessageEnricherTest
     {

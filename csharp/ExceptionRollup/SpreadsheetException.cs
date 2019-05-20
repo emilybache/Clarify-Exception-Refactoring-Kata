@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace StarterProject
+namespace codingdojo
 {
     public class SpreadsheetException : Exception
     {

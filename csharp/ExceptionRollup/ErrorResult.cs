@@ -1,4 +1,4 @@
-﻿namespace StarterProject
+﻿namespace codingdojo
 {
     public class ErrorResult
     {
