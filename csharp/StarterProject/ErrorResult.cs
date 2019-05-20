@@ -1,4 +1,4 @@
-﻿namespace MessageEnricher
+﻿namespace StarterProject
 {
     public class ErrorResult
     {

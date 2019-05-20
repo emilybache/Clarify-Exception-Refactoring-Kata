@@ -1,7 +1,7 @@
 ﻿using System;
 using Xunit;
 
-namespace MessageEnricher
+namespace StarterProject
 {
     public class MessageEnricherTest
     {

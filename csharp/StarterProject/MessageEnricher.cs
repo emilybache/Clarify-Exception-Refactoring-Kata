@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace MessageEnricher
+namespace StarterProject
 {
     public class MessageEnricher
     {

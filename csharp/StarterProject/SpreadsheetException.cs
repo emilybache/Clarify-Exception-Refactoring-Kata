@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace MessageEnricher
+namespace StarterProject
 {
     public class SpreadsheetException : Exception
     {
