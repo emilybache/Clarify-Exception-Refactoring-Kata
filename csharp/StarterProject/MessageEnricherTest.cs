@@ -3,7 +3,7 @@ using Xunit;
 
 namespace MessageEnricher
 {
-    public class MessageEnricherShould
+    public class MessageEnricherTest
     {
         [Fact]
         public void SampleTest()
