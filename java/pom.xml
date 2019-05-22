@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>info.coding-is-like-cooking</groupId>
-    <artifactId>ExceptionRollup</artifactId>
+    <artifactId>ClarifyException</artifactId>
     <version>1.0.0-SNAPSHOT</version>
     <packaging>jar</packaging>
 
