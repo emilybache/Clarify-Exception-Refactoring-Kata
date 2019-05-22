@@ -22,7 +22,7 @@ namespace codingdojo
             }
 
             if ("Object reference not set to an instance of an object".Equals(e.Message)
-                && StackTraceContains(e, "vLookup"))
+                && StackTraceContains(e, "VLookup"))
                 return new ErrorResult(formulaName, "Missing Lookup Table", spreadsheetWorkbook.GetPresentation());
             if ("No matches found".Equals(e.Message))
             {
@@ -35,9 +35,11 @@ namespace codingdojo
 
         private bool StackTraceContains(Exception e, string message)
         {
-            foreach (var ste in e.StackTrace)
-                if (ste.ToString().Contains(message))
+            foreach (var ste in e.StackTrace.Split('\n'))  
+            {
+                 if (ste.Contains(message))
                     return true;
+            }
             return false;
         }
 
