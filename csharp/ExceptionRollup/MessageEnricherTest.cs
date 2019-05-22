@@ -11,7 +11,7 @@ namespace codingdojo
     {
         private Exception VLookup()
         {
-            return new Exception("Object reference not set to an instance of an object");
+            throw new Exception("Object reference not set to an instance of an object");
         }
 
         [Fact]
@@ -87,20 +87,30 @@ namespace codingdojo
             var enricher = new MessageEnricher();
             var worksheet = new SpreadsheetWorkbook();
 
-            var e = VLookup();
-
-            Approvals.Verify(enricher.EnrichError(worksheet, e));
+            try
+            {
+                VLookup();
+            }
+            catch (Exception e)
+            {
+                Approvals.Verify(enricher.EnrichError(worksheet, e));
+            }            
         }
 
         [Fact]
-        private void ObjectReferenceNotSetButStacktraceNotVLookup()
+        private void ObjectReferenceNotSetButStacktraceNotLookupTableProblem()
         {
             var enricher = new MessageEnricher();
             var worksheet = new SpreadsheetWorkbook();
 
-            var e = new Exception("Object reference not set to an instance of an object");
-
-            Approvals.Verify(enricher.EnrichError(worksheet, e));
+            try
+            {
+                throw new Exception("Object reference not set to an instance of an object");
+            }
+            catch (Exception e)
+            {
+                Approvals.Verify(enricher.EnrichError(worksheet, e));
+            }
         }
     }
 }

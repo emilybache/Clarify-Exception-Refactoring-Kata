@@ -1,0 +1,1 @@
+﻿ErrorResult{formulaName='Name of the formula', message='Object reference not set to an instance of an object', presentation='Presentation of which cells in the spreadsheet are populated with numbers and formulas and things'}

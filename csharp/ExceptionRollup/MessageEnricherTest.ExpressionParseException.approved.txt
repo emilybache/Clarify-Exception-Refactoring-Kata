@@ -1,0 +1,1 @@
+﻿ErrorResult{formulaName='Name of the formula', message='Invalid expression found in tax formula [Name of the formula]. Check that separators and delimiters use the English locale.', presentation='Presentation of which cells in the spreadsheet are populated with numbers and formulas and things'}
