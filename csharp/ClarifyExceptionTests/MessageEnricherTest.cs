@@ -1,8 +1,11 @@
-﻿using System;
+﻿using ApprovalTests;
+using System;
+using ApprovalTests.Reporters;
 using Xunit;
 
 namespace codingdojo
 {
+    [UseReporter(typeof(DiffReporter))]
     public class MessageEnricherTest
     {
         [Fact]
@@ -16,7 +19,7 @@ namespace codingdojo
 
             var actual = enricher.EnrichError(worksheet, e);
 
-            Assert.Equal("Fixme", actual.Message);
+            Approvals.Verify(actual);
         }
     }
 }
