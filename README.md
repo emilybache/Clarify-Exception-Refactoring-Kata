@@ -5,6 +5,8 @@ This is a refactoring exercise starting point. Focus on improving the code in th
 
 Note there is a branch 'with_tests' if you'd like to go straight to doing the refactoring and skip writing tests yourself.
 
+This exercise has similar features to some code I worked on when I was coaching a team. We could all see there was some duplication and a long method smell, but it took some time to work out how to improve it. I made this exercise as a way to enable us all to practice what to do if this kind of thing happens again.
+
 The Scenario
 ------------
 

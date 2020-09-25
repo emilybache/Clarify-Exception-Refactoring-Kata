@@ -35,9 +35,9 @@ namespace codingdojo
 
         private bool StackTraceContains(Exception e, string message)
         {
-            foreach (var ste in e.StackTrace.Split('\n'))
+            foreach (var ste in e.StackTrace.Split('\n'))  
             {
-                if (ste.Contains(message))
+                 if (ste.Contains(message))
                     return true;
             }
             return false;
