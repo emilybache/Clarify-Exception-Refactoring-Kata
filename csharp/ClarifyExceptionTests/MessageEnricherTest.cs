@@ -1,5 +1,6 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
+using ApprovalTests.Reporters;
 using Xunit;
 using ApprovalTests;
 using ApprovalTests.Reporters;
